@@ -1,0 +1,337 @@
+*{
+   overflow: hidden;
+}
+.title{
+    height: 50px;
+    background-color: royalblue;
+    margin:0 auto;
+}
+.title img{
+    float: left;
+    margin-left: 50px;
+}
+#titleRight{
+    float: right;
+    margin-top: -40px;
+    margin-right: 150px;
+}
+#titleRight input{
+    float: left;
+    margin-right: 100px;
+    border-radius: 5px;
+    padding:5px 20px;
+}
+#titleRight2 {
+    float: right;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+#titleRight2 span{
+    float: right;
+    margin-top:5px;
+    font-size: small;
+}
+/*左边区域*/
+.left{
+    width: 200px;
+    float: left;
+    background-color: slategrey;
+    text-align: center;
+}
+#left1 img{
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius:25px 25px 25px 25px;
+}
+#left1right{
+    float: right;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+#left2left{
+    float:left;
+    border-right: 2px solid dimgray;
+    padding-right: 20px;
+    margin-top:15px;
+    margin-left: 50px;
+}
+#left2right{
+    float: right;
+    margin-top:15px;
+    margin-right: 50px;
+}
+#left3 img{
+    float:left;
+    margin-top:5px;
+    margin-left:0;
+    margin-right:-80px;
+    padding-right: 0;
+}
+#left3 span{
+    padding-top: 20px;
+}
+/*多级目录问题*/
+#left3 li>ul{
+    display: none;
+}
+#left3 li:hover>ul{
+    display:block;
+}
+#left3Massage{
+    padding-left:0;
+    padding-top: 20px;
+}
+#left4 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#left41{
+    float: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+#left5 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#left51{
+    float: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+#left6 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#left61{
+    float: right;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+#left7 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#left71{
+    float: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+#left8 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#left81{
+    float: right;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+/*右边区域*/
+.right{
+    background-color: white;
+    text-align: center;
+}
+#rightTitle{
+    text-align: left;
+    padding-left: 20px;
+    color: slategrey;
+}
+#rightTitle span{
+    color: royalblue;
+}
+#rightMassage{
+    background-color: lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#rightMassage1{
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    padding-top: 10px;
+    background-color: white;
+}
+#rightMassage1 select,input{
+    padding:5px 30px;
+    margin-bottom: 5px;
+}
+#rightMassage11{
+    float: left;
+    padding-right: 30px;
+}
+#rightMassage12{
+    float: right;
+    padding-right: 30px;
+}
+#rightMassage112{
+    float: left;
+}
+#rightMassage13{
+    float:right;
+    padding-right: 500px;
+    text-align: left;
+}
+#rightMassage1123{
+    float: left;
+}
+#rightMassage15{
+    float: right;
+    margin-right: 150px;
+    margin-top: -50px;
+}
+#rightMassage14{
+    margin-left: 600px;
+    padding-top: 0;
+    position: absolute;
+    text-align: right;
+}
+#rightMassage2 ul{
+    float: left;
+}
+#rightMassage2 li{
+    display:inline;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px;
+    background-color: white;
+    margin: 10px;
+}
+#money1,#money2,#money3,#money4,#money5,#money6{
+    color:red;
+    font-size: larger;
+}
+#rightMassage2 span{
+    color: grey;
+    font-size: 1em;
+}
+#rightMassage3{
+    text-align: left;
+
+}
+#rightMassage312{
+    float: left;
+}
+#rightMassage31{
+    float: left;
+    border-left: 3px solid green;
+    padding: 10px ;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 210px;
+}
+#rightMassage31Left{
+    float: left;
+    margin-left: 5px;
+}
+#rightMassage31Right{
+    float: right;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+#rightMassage32{
+    float: right;
+    border-left: 3px solid blue;
+    padding: 10px ;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 210px;
+}
+#rightMassage32Left{
+    float: left;
+    margin-left: 5px;
+}
+#rightMassage32Right{
+    float: right;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+#rightMassage34{
+    float: right;
+    border-left: 3px solid yellow;
+    padding: 10px ;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    width:210px;
+}
+#rightMassage34Left{
+    float: left;
+    margin-left: 5px;
+}
+#rightMassage34Right{
+    float: right;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+#rightMassage33{
+    border-left: 3px solid indianred;
+    padding: 10px ;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 270px;
+    width: 210px;
+}
+#rightMassage33Left{
+    float: left;
+    margin-left: 5px;
+}
+#rightMassage33Right{
+    float: right;
+    background-color: indianred;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+/*倒数第二行内容*/
+#rightMassage4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#rightMassage4Left{
+    float: left;
+    width: 600px;
+    height: 600px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+#rightMassage4LeftMassage li{
+    list-style: none;
+    float: left;
+}
+#rightMassage4LeftMassage li>table{
+    display: none;
+}
+#rightMassage4LeftMassage1>table{
+    display: block;
+}
+#rightMassage4LeftMassage li:hover>table{
+    display: block;
+}
+
+#rightMassage4Right{
+    float: right;
+    border-radius: 2px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    width: 480px;
+}
