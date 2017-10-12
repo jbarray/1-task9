@@ -232,7 +232,7 @@ li{
     margin-top: 20px;
 }
 .time-line ul .history-query{
-    width: 128px;
+    width: 130px;
     height: 62px;
     font-size: 12px;
     text-align: left;
@@ -259,19 +259,235 @@ li{
     text-align: left;
     color: #323333;
     font-size:14px;
+    margin-bottom: 5px;
 }
-.data{
+.data-month li{
     float: left;
-    width: 200px;
+    width: 198px;
     height: 72px;
-    margin-right: 20px;
     background-color: white;
     border: 1px solid #dadcde;
+    margin-right: 30px;
 }
+.data-month li:last-child{
+    margin:0;
+}
+.num{
+    padding-top: 18px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+.quantity{
+    padding-left: 10px;
+    line-height: 20px;
+}
+.data-month li span{
+    margin: -45px 12px 0 12px;
+    width: 60px;
+    height: 48px;
+    float: right;
+}
+.color_43b29d span{
+    background: #43b29d;
+}
+.color_388ac1 span{
+    background: #388ac1;
+}
+.color_d04a36 span{
+    background: #d04a36;
+}
+.color_e2cd46 span{
+    background: #e2cd46;
+}
+.data-month li .line{
+    width: 3px;
+    height: 72px;
+    margin:0;
+    float: left;
+}
+.color_43b29d .line{
+    background: #43b29d;
+}
+.color_388ac1 .line{
+    background: #388ac1;
+}
+.color_d04a36 .line{
+    background: #d04a36;
+}
+.color_e2cd46 .line{
+    background: #e2cd46;
+}
+/*item1开始*/
+.item1{
+    width: 890px;
+    overflow: hidden;
+    margin-top: 45px;
+}
+.item1 .item>div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dadcde;
+    height: 356px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.item1 .item-left{
+    width:530px;
+    background-color: white;
+    height: 270px;
+}
+.item1 .item-right{
+    width:350px;
+    margin-left: 10px;
+    background-color: white;
+    float: right;
+    margin-top: -270px;
+}
+.item-title{
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius:4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+    padding-left: 10px;
+    color: #aaaaaa;
+    border-bottom: 1px solid #e7e9eb;
+    font-size: 12px;
+    height:39px;
+    line-height: 39px;
+    background-color:#f3f5f6;
+}
+.item1 .group-header{
+    width:490px;
+    height: 28px;
+    margin: 12px 0 0 20px;
+}
+.item1 ul li{
+    float: left;
+    height: 28px;
+    width: 84px;
+    margin-right: 4px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    color: #000;
+    background-color: #ececef;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.item1 ul li:first-child{
+    background-color: white;
+    border:1px solid #d3d3d3;
+    border-bottom: none;
+}
+.item1 .table-box{
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    margin: 0 20px 30px 20px;
+    background-color: white;
+}
+.table{
+    text-align: center;
+    color: #535353;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-family: "SimSun",serif;
+    line-height: 30px;
+    border-collapse:collapse;
+}
+.table .cur{
+    background-color: #d3d3d3;
 
-
-
-
-
-
-
+}
+.table td{
+    text-align: center;
+    width: 80px;
+}
+table,td,th{
+    border:1px solid #d3d3d3;
+}
+/*item-right开始*/
+.item-right{
+    background-color: white;
+}
+.item-about{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+.item-right .title{
+     color: #c3c2c2;
+     line-height: 18px;
+     margin-top: 2px;
+ }
+.item-right span{
+    color: #535353;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+ .item-right .line{
+    background-color: #dddddd;
+    height: 1px;
+    border: none;
+    margin-left: 32px;
+}
+.item-right .line_x_1{
+    width: 280px;
+}
+.item-right .line_x_3{
+    width: 280px;
+}
+.item-right .mid_box{
+    overflow: hidden;
+}
+.item-price{
+    float: left;
+}
+.item-people{
+    float: right;
+    padding-right: 230px;
+}
+.item-right .mid_box .line_y{
+    width: 1px;
+    height: 44px;
+    margin-left: 50px;
+    background-color: #dddddd;
+}
+/*the last part*/
+.calender_charts{
+    width: 890px;
+    height: 400px;
+    font-size: 12px;
+    color: #535353;
+    margin-top: 8px;
+}
+.content .calender_charts>div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dadcde;
+    height: 356px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.calender{
+    width: 350px;
+}
+.charts{
+    width: 530px;
+    margin-left: 10px;
+}
