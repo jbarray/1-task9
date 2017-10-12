@@ -1,4 +1,4 @@
-html{
+*{
     padding:0;
     margin:0;
 }
@@ -40,18 +40,18 @@ html{
     font-size: small;
 }
 /*左边区域*/
-.left{
-    width: 200px;
+.aside{
+    width: 13%;
     float: left;
     background-color: slategrey;
     text-align: left;
     padding: 20px;
     margin:0 auto;
 }
-.left ul li{
+.aside ul li{
     list-style: none;
 }
-#left1 img{
+#aside1 img{
     float: left;
     padding-left: 30px;
     padding-top: 30px;
@@ -59,110 +59,112 @@ html{
     height: 50px;
     border-radius:25px 25px 25px 25px;
 }
-#left1right{
+#aside1right{
     float: right;
     padding-right: 30px;
     padding-top: 50px;
 }
-#left2left{
-    float:left;
-    border-right: 2px solid dimgray;
+#aside2 ul li{
+    margin-right: 0;
+    display: inline-block;
+}
+#aside2aside{
+    margin-top: 20px;
+    margin-left: -30px;
     padding-right: 10px;
-    margin-top:100px;
-    margin-left: -20px;
+    border-right: 2px solid black;
 }
-#left2right{
-    float: right;
-    margin-top: 30px;
-    margin-right: 50px;
+#aside2right{
+    padding-left: 10px;
 }
-#left3Title{
+
+#aside3Title{
    display: inline-block;
     text-align: center;
     padding-top: 20px;
     padding-left: 40px;
     width: 100px;
 }
-#left3TitleRight{
+#aside3TitleRight{
     float: right;
 }
-#left3 ul{
+#aside3 ul{
 
 }
     /*多级目录问题*/
-#left3 li>ul{
+#aside3 li>ul{
     display: none;
 
 }
-#left3 li:hover>ul{
+#aside3 li:hover>ul{
     display:block;
 }
-#left3 ul{
+#aside3 ul{
     padding-left: 80px;
 }
-#left3Massage{
+#aside3Massage{
     padding-left:0;
     padding-top: 5px;
 }
-#left4 img{
+#aside4 img{
     float: left;
     padding-left: 40px;
     padding-top: 10px;
 }
-#left41{
+#aside41{
     float: right;
-    padding-right: 40px;
-    padding-top: 20px;
-}
-#left5 img{
-    float: left;
-    margin-left: -35px;
-    margin-top: 40px;
+    padding-right: 30px;
     padding-top: 10px;
 }
-#left51{
+#aside5 img{
+    float: left;
+    padding-left: 40px;
+    padding-top: 50px;
+    margin-left: -75px;
+}
+#aside51{
     float: right;
-    padding-right: 40px;
+    padding-right: 30px;
     padding-top: 20px;
 }
-#left6 img{
+#aside6 img{
+    float: left;
+    margin-left: 0;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+#aside61{
+    float: right;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+#aside7 img{
+    float: left;
+    margin-left: -32px;
+    margin-top: 30px;
+    padding-top: 40px;
+}
+#aside71{
+    float: right;
+    padding-right: 33px;
+    padding-top: 25px;
+}
+#aside8 img{
     float: left;
     margin-left: -35px;
-    margin-top: 40px;
+    margin-top: 37px;
     padding-top: 20px;
 }
-#left61{
+#aside81{
     float: right;
-    padding-right: 70px;
-    padding-top: 20px;
-}
-#left7 img{
-    float: left;
-    margin-left: -35px;
-    margin-top: 40px;
-    padding-top: 20px;
-}
-#left71{
-    float: right;
-    padding-right: 40px;
-    padding-top: 20px;
-}
-#left8 img{
-    float: left;
-    margin-left: -35px;
-    margin-top: 40px;
-    padding-top: 20px;
-}
-#left81{
-    float: right;
-    padding-right: 40px;
+    padding-right: 30px;
     padding-top: 20px;
 }
 /*右边区域*/
 .right{
     text-align: center;
     overflow: hidden;
-
+    width: 83%;
 }
 #rightTitle{
     background-color: white;
@@ -238,6 +240,12 @@ html{
     background-color: white;
     margin: 10px;
 }
+#rightMassage2 li:hover{
+    border-top: 2px solid blue;
+}
+#rightMassage2 li .time_1{
+    border-top: 2px solid blue;
+}
 #money1,#money2,#money3,#money4,#money5,#money6{
     color:red;
     font-size: larger;
@@ -271,7 +279,7 @@ html{
     margin-right: 30px;
     width: 210px;
 }
-#rightMassage31Left{
+#rightMassage31aside{
     float: left;
     margin-left: 5px;
 }
@@ -291,7 +299,7 @@ html{
     margin-right: 30px;
     width: 210px;
 }
-#rightMassage32Left{
+#rightMassage32aside{
     float: left;
     margin-left: 5px;
 }
@@ -311,7 +319,7 @@ html{
     margin-right: 30px;
     width:210px;
 }
-#rightMassage34Left{
+#rightMassage34aside{
     float: left;
     margin-left: 5px;
 }
@@ -330,7 +338,7 @@ html{
     margin-right: 30px;
     width: 210px;
 }
-#rightMassage33Left{
+#rightMassage33aside{
     float: left;
     margin-left: 5px;
 }
@@ -348,7 +356,7 @@ html{
     display: flex;
     justify-content: center;
 }
-#rightMassage4Left{
+#rightMassage4aside{
     width: 500px;
     height: 200px;
     border-radius: 2px;
@@ -356,17 +364,17 @@ html{
     padding-left: 10px;
     margin-right: 20px;
 }
-#rightMassage4LeftMassage li{
+#rightMassage4asideMassage li{
     list-style: none;
     float: left;
 }
-#rightMassage4LeftMassage li>table{
+#rightMassage4asideMassage li>table{
     display: none;
 }
-#rightMassage4LeftMassage1>table{
+#rightMassage4asideMassage1>table{
     display: block;
 }
-#rightMassage4LeftMassage li:hover>table{
+#rightMassage4asideMassage li:hover>table{
     display: block;
 }
 
@@ -381,7 +389,7 @@ html{
     display: flex;
     justify-content: center;
 }
-#rightMassage5Left{
+#rightMassage5aside{
     width:45%;
 }
 #rightMassage5Right{
