@@ -52,6 +52,7 @@ li{
 /*aside*/
 .aside{
     width: 260px;
+    height: 1500px;
     background-color:#2a2e3d;
     float: left;
     padding: 10px 0;
@@ -132,7 +133,7 @@ li{
     background-color: #eeeded;
     margin-left: 260px;
     padding-left: 60px;
-    height: 1200px;
+    height: 1520px;
     color: #6e8095;
     font-size: 14px;
 }
@@ -179,6 +180,7 @@ li{
     border: none;
     color: #ffffff;
     background: #388ac1;
+    cursor: pointer;
 }
 .search>div{
     margin-left: 40px;
@@ -323,7 +325,7 @@ li{
     overflow: hidden;
     margin-top: 45px;
 }
-.item1 .item>div{
+.item1 .item-group>div{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -339,21 +341,30 @@ li{
     width:530px;
     background-color: white;
     height: 270px;
-}
-.item1 .item-right{
-    width:350px;
-    margin-left: 10px;
-    background-color: white;
-    float: right;
-    margin-top: -270px;
-}
-.item-title{
+    border: 1px solid #dadcde;
     -webkit-border-top-left-radius: 4px;
     -moz-border-top-left-radius:4px;
     border-top-left-radius: 4px;
     -webkit-border-top-right-radius: 4px;
     -moz-border-top-left-radius:4px;
     border-top-right-radius: 4px;
+}
+.item1 .item-right{
+    width:350px;
+    margin-left: 10px;
+    background-color: white;
+    float: right;
+    margin-top: -272px;
+    border: 1px solid #dadcde;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-top-left-radius:4px;
+    border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+}
+.item-title{
+
     padding-left: 10px;
     color: #aaaaaa;
     border-bottom: 1px solid #e7e9eb;
@@ -367,7 +378,7 @@ li{
     height: 28px;
     margin: 12px 0 0 20px;
 }
-.item1 ul li{
+.item1 .group-header li{
     float: left;
     height: 28px;
     width: 84px;
@@ -384,7 +395,7 @@ li{
     -moz-border-top-right-radius: 4px;
     border-top-right-radius: 4px;
 }
-.item1 ul li:first-child{
+.item1 .item-left ul li:first-child{
     background-color: white;
     border:1px solid #d3d3d3;
     border-bottom: none;
@@ -406,7 +417,7 @@ li{
     line-height: 30px;
     border-collapse:collapse;
 }
-.table .cur{
+.table .spe{
     background-color: #d3d3d3;
 
 }
@@ -414,12 +425,13 @@ li{
     text-align: center;
     width: 80px;
 }
-table,td,th{
+.table,.table td,.table td th{
     border:1px solid #d3d3d3;
 }
 /*item-right开始*/
 .item-right{
     background-color: white;
+    height: 270px;
 }
 .item-about{
     padding-left: 40px;
@@ -440,34 +452,74 @@ table,td,th{
     background-color: #dddddd;
     height: 1px;
     border: none;
-    margin-left: 32px;
+    margin-left: -10px;
 }
 .item-right .line_x_1{
     width: 280px;
+    margin-left: -10px;
+    margin-top: 6px;
+}
+.item-right .line_x_2{
+    width: 320px;
 }
 .item-right .line_x_3{
     width: 280px;
+    margin-left: -10px;
+    margin-top: 6px;
 }
 .item-right .mid_box{
     overflow: hidden;
 }
 .item-price{
     float: left;
+    position: absolute;
+    margin-top: 3px;
 }
 .item-people{
     float: right;
-    padding-right: 230px;
+    margin-left: 70px;
+    margin-top: 3px;
+    position: absolute;
 }
-.item-right .mid_box .line_y{
+.line_y{
     width: 1px;
     height: 44px;
     margin-left: 50px;
     background-color: #dddddd;
 }
+.item-describe{
+    line-height: 20px;
+    height: 70px;
+}
+.plan{
+    margin-left: -10px;
+    height: 36px;
+    line-height: 36px;
+}
+.plan .ensure{
+    height: 12px;
+    width: 12px;
+    border:none;
+    background-color: #d5d6d6;
+}
+.plan label{
+    line-height: 18px;
+    color: #c3c2c2;
+    font-size: 12px;
+}
+.plan .submit{
+    width: 50px;
+    height: 26px;
+    border: 0;
+    background: #388ac1;
+    color: #ffffff;
+    margin-left: 140px;
+    cursor: pointer;
+}
 /*the last part*/
 .calender_charts{
     width: 890px;
-    height: 400px;
+    height: 500px;
     font-size: 12px;
     color: #535353;
     margin-top: 8px;
@@ -479,7 +531,7 @@ table,td,th{
     float: left;
     background-color: #fff;
     border: 1px solid #dadcde;
-    height: 356px;
+    height: 430px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -491,3 +543,178 @@ table,td,th{
     width: 530px;
     margin-left: 10px;
 }
+.calender_charts .select_box{
+    height: 22px;
+    padding:11px 0;
+    text-align: center;
+}
+
+.calender_charts .select_box *{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #cacbcb;
+    margin-right: 0;
+    height: 20px;
+}
+.select_box select{
+    padding-left: 4px;
+    background: url("./img/new_img/icon_down_2.png")no-repeat right;
+}
+.select_box select:first-child{
+    width: 64px;
+}
+.select_box select:nth-child(3){
+    width: 44px;
+    margin: 0 -5px;
+    border-left: none;
+    border-right: none;
+}
+.select_box select:nth-child(5){
+    width: 74px;
+}
+.select_box button{
+    background: #ffffff;
+    width: 74px;
+    cursor: pointer;
+}
+.select_box a{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.select_box a:nth-child(2){
+    height: 18px;
+    margin-right: -1px;
+    background: url("./img/new_img/icon_a_l.png") no-repeat;
+    border-right: none;
+}
+.select_box a:nth-child(4){
+    height: 18px;
+    margin-left: -1px;
+    background: url("./img/new_img/icon_a_r.png") no-repeat;
+    border-left: none;
+}
+.calender .week{
+    border-top: 1px solid #a9cfec;
+    border-bottom: 1px solid #e1e1e2;
+    height: 30px;
+    width: 310px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    color: #535353;
+}
+.calender .week li{
+    float: left;
+    width: 44px;
+}
+.calender .calender-table{
+    text-align: center;
+    font-size: 12px;
+    color: #535353;
+    margin:auto;
+}
+.calender .calender-table tr{
+    height: 5px;
+}
+.calender .calender-table td{
+    width: 40px;
+    height: 0;
+}
+.calender .calender-table .festival{
+    color: #c9161d;
+}
+.calender .calender-table .selected{
+    border: 1px solid #f7d156;
+}
+.calender .calender-table tr td:nth-child(n+6) .num{
+    color: #c9161d;
+}
+.calender .calender-table td:hover{
+    border: 1px solid #f7d156;
+}
+.charts table{
+    color: #231815;
+    font-size: 13px;
+    margin: 18px auto;
+    border-right: 1px solid #cacacb;
+    border-bottom: 1px solid #cacacb;
+}
+.charts table td{
+    height: 28px;
+    border-left: 1px solid #cacacb;
+    border-top: 1px solid #cacacb;
+    position: relative;
+}
+.charts table td div{
+    position: absolute;
+    height: 4px;
+    width: 168px;
+    background-color: #dcdcdc;
+    left: 100px;
+    top: 10px;
+}
+.charts table tr:nth-child(1) .line{
+    background-color: #ed6e52;
+    width: 140px;
+    margin-left: 0;
+}
+.charts table tr:nth-child(2) .line{
+    background-color: #ef8150;
+    width: 120px;
+    margin-left: 0;
+}
+.content .calender_charts .charts table tr:nth-child(3) .line{
+    background-color: #f29f4f;
+    width: 104px;
+    margin-left: 0;
+}
+.content .calender_charts .charts table tr:nth-child(n+4) .line{
+    background-color: #7ecaf0;
+    margin-left: 0;
+}
+.content .calender_charts .charts table tr:nth-child(4) .line{
+    width: 98px;
+}
+.content .calender_charts .charts table tr:nth-child(5) .line{
+    width: 88px;
+}
+.content .calender_charts .charts table tr:nth-child(6) .line{
+    width: 78px;
+}
+.content .calender_charts .charts table tr:nth-child(7) .line{
+    width: 68px;
+}
+.content .calender_charts .charts table tr:nth-child(8) .line{
+    width: 58px;
+}
+.content .calender_charts .charts table tr:nth-child(9) .line{
+    width: 48px;
+}
+.content .calender_charts .charts table tr:nth-child(10) .line{
+    width: 38px;
+}
+.content .calender_charts .charts table tr td:nth-child(-n+2){
+    text-align: center;
+}
+.content .calender_charts .charts table tr td:first-child{
+    width: 66px;
+}
+.content .calender_charts .charts table tr td:nth-child(2){
+    width: 90px;
+}
+.content .calender_charts .charts table tr td:last-child{
+    width: 290px;
+    text-indent: 24px;
+}
+.content .calender_charts .charts table tr:hover{
+    cursor: pointer;
+    background-color: #f4f5f6;
+}
+
+
+
+
